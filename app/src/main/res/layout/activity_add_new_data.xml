@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f0f0"
+    android:padding="20dp"
+    tools:context=".EditActivity">
+
+    <TextView
+        android:id="@+id/head"
+        android:gravity="center"
+        android:text="Add New Items"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Model"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/head"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        android:id="@+id/ed_newmobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/black"
+        android:textColorHint="#545252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:ems="10"
+        android:textSize="12dp"
+        android:backgroundTint="@color/teal_700"
+        android:inputType="textPersonName"
+        android:hint="Model Name" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/ed_newmobile"
+        android:layout_height="wrap_content"
+        android:text="Price" />
+
+    <EditText
+        android:id="@+id/ed_newprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:ems="10"
+        android:backgroundTint="@color/teal_700"
+        android:textSize="12dp"
+        android:drawableTint="@color/black"
+        android:textColorHint="#545252"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:hint="Enter the price" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/ed_newprice"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Quantity of Black" />
+
+    <EditText
+        android:id="@+id/ed_newQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:ems="10"
+        android:textSize="12dp"
+        android:backgroundTint="@color/teal_700"
+        android:drawableTint="@color/black"
+        android:textColorHint="#545252"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:hint="Enter the Quantity" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/ed_newQuantity"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Quantity of White" />
+
+    <EditText
+        android:id="@+id/ed_newwhiteQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:ems="10"
+        android:textSize="12dp"
+        android:backgroundTint="@color/teal_700"
+        android:drawableTint="@color/black"
+        android:textColorHint="#545252"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:hint="Enter the Quantity" />
+
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:text="ADD"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_newwhiteQuantity" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

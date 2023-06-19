@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/teal_200">
+
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#f2e3df"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_model"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_weight=".6"
+                android:layout_height="0dp"
+                android:text="TextView"
+                android:maxLines="4"
+                android:padding="6dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_totalQuant"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_weight=".4"
+                android:layout_height="0dp"
+                android:text="TextView"
+                android:maxLines="4"
+                android:padding="6dp"
+                android:layout_gravity="left|top"
+                android:gravity="left|top"
+                android:textSize="13dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:layout_gravity="right|center"
+                android:gravity="right|center"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/tv_rs"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="wrap_content"
+                    android:textSize="16dp"
+                    android:layout_gravity="right|center"
+                    android:gravity="right|center"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:text="₹" />
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:textSize="16dp"
+                android:layout_gravity="left|center"
+                android:gravity="left|center"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:text="10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                   android:layout_gravity="right|center"
+                    android:gravity="right|center">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center|right"
+                        android:src="@drawable/baseline_square_24_black"/>
+                    <TextView
+                        android:id="@+id/tv_Quantity_white"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="13dp"
+                        android:gravity="right|center"
+                        android:layout_gravity="right|center"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/teal_700" />
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:layout_gravity="right|center"
+                    android:gravity="right|center"
+                    tools:ignore="UseCompoundDrawables">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_square_24"/>
+                    <TextView
+                        android:id="@+id/tv_Quantity_black"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="13dp"
+                        android:gravity="right|center"
+                        android:layout_gravity="right|center"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/teal_700"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
